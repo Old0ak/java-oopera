@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Show {
     String title; // Название спектакля.
     int duration; // Длительность спектакля в минутах.
-    String director;
+    Person director;
     ArrayList<Actor> listOfActors;
 
-    public Show(String title, int duration, String director, ArrayList<Actor> listOfActors) {
+    public Show(String title, int duration, Person director, ArrayList<Actor> listOfActors) {
         this.title = title;
         this.duration = duration;
         this.director = director;

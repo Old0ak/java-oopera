@@ -1,3 +1,5 @@
+package main.java.ru.yandex.theather;
+
 public class Person {
     String name;
     String surname; // Фамилия.

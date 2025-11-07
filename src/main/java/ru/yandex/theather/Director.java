@@ -1,3 +1,5 @@
+package main.java.ru.yandex.theather;
+
 public class Director extends Person{
     private int numberOfShows;
 
@@ -11,7 +13,7 @@ public class Director extends Person{
 
     @Override
     public String toString() {
-        return "Director{" +
+        return "main.java.ru.yandex.theather.Director{" +
                 "numberOfShows=" + numberOfShows +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +

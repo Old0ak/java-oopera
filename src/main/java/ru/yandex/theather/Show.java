@@ -1,3 +1,5 @@
+package main.java.ru.yandex.theather;
+
 import java.util.ArrayList;
 
 public class Show {

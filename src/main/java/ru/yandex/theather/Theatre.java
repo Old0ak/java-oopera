@@ -22,10 +22,10 @@ public class Theatre {
 
         Show romeoAndJuliet = new Show("Ромео и Джульетта", 145, kirillSerebrennikov,
                 listOfActorsByRomeoAndJuliet);
-        Opera karmen = new Opera("Кармен", 190, elizavetaBondar, listOfActorsByKarmen, hansZimmer.name,
+        Opera karmen = new Opera("Кармен", 190, elizavetaBondar, listOfActorsByKarmen, hansZimmer,
                 "повествует о трагической любви солдата Хозе к свободолюбивой цыганке Кармен", 10);
         Ballet lebedinoeOzero = new Ballet("Лебединое озеро", 180, kirillSerebrennikov,
-                listOfActorsByLebedinoeOzero, allaDuhova.name, "рассказывает о принце Зигфриде, " +
+                listOfActorsByLebedinoeOzero, allaDuhova, "рассказывает о принце Зигфриде, " +
                 "который влюбляется в Одетту — принцессу, заколдованную злым колдуном фон Ротбартом", allaDuhova);
 
         romeoAndJuliet.addNewActor(konstantinHabenskiy);

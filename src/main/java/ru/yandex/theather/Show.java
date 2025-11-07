@@ -8,7 +8,7 @@ public class Show {
     Person director;
     ArrayList<Actor> listOfActors;
 
-    public Show(String title, int duration, Person director, ArrayList<Actor> listOfActors) {
+    public Show(String title, int duration, Director director, ArrayList<Actor> listOfActors) {
         this.title = title;
         this.duration = duration;
         this.director = director;

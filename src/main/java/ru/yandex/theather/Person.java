@@ -10,4 +10,8 @@ public class Person {
         this.surname = surname;
         this.gender = gender;
     }
+
+    public String getSurname() {
+        return surname;
+    }
 }

@@ -33,18 +33,27 @@ public class Show {
     }
 
     public void replaceActor(Actor newActor, String surname) {
+        int numberOfIdenticalSurname = 0;
+        Person foundActor = null;
         for (Actor oldActor : listOfActors) {
-            if (oldActor.surname.equals(surname)) {
-                int index = listOfActors.indexOf(oldActor);
-                System.out.println();
-                System.out.print(oldActor + " успешно заменён на " + newActor);
-                System.out.println();
-                listOfActors.set(index, newActor);
-                return;
+            if (oldActor.getSurname().equals(surname)) {
+                numberOfIdenticalSurname++;
+                foundActor = oldActor;
             }
         }
-        System.out.println();
-        System.out.println("Актёр с фамилией " + surname + " в спектакле не участвует!");
+        if (numberOfIdenticalSurname == 1) {
+            int index = listOfActors.indexOf(foundActor);
+            System.out.println();
+            System.out.print(foundActor + " успешно заменён на " + newActor);
+            System.out.println();
+            listOfActors.set(index, newActor);
+        } else if (numberOfIdenticalSurname > 1) {
+            System.out.println();
+            System.out.println("Найдено несколько человек с фамилией " + surname + ".");
+        } else {
+            System.out.println();
+            System.out.println("Актёр с фамилией " + surname + " в спектакле не участвует!");
+        }
     }
 
     public void printActors() {

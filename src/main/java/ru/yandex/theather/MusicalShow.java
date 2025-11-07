@@ -3,8 +3,8 @@ package main.java.ru.yandex.theather;
 import java.util.ArrayList;
 
 public class MusicalShow extends Show {
-    String musicAuthor;
-    String librettoText;
+    protected String musicAuthor;
+    protected String librettoText;
 
     public MusicalShow(String title, int duration, Person director, ArrayList<Actor> listOfActors, String musicAuthor,
                        String librettoText) {
